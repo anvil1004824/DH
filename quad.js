@@ -52,16 +52,19 @@ function quadDetermination() {
     else if (quadC === 0) cStr = "";
     else cStr = ` - ${0 - quadC}`;
 
-    if (quadB === 1) bStr = ` + x`;
+    if (quadB === 1) bStr = " + x";
+    else if (quadB === -1) bStr = " - x";
     else if (quadB > 0) bStr = ` + ${quadB}x`;
     else if (quadB === 0) bStr = "";
     else bStr = ` - ${0 - quadB}x`;
 
     if (quadA === 1) aStr = `x²`;
+    else if (quadA === -1) aStr = `-x²`;
     else if (quadA > 0 || quadA < 0) aStr = `${quadA}x²`;
     else {
       aStr = "";
       if (quadB === 1) bStr = "x";
+      else if (quadB === -1) bStr = "-x";
       else if (quadB > 0 || quadB > 0) bStr = `${quadB}x`;
       else {
         bStr = "";
