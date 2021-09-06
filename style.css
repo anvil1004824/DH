@@ -24,14 +24,16 @@ input:focus {
   align-items: center;
 }
 .first,
-.second {
+.second,
+.third {
   width: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .first input,
-.second input {
+.second input,
+.third input {
   width: 50px;
   border-bottom: 1px solid black;
   text-align: center;
