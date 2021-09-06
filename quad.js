@@ -34,7 +34,7 @@ let aStr;
 let bStr;
 let cStr;
 
-function Determination() {
+function quadDetermination() {
   quadA = yDif3 / aDif3;
   quadB = (yDif1 - aDif1 * quadA) / bDif1;
   quadC =
@@ -72,7 +72,7 @@ function Determination() {
   }
 }
 
-function Submit(event) {
+function quadSubmit(event) {
   event.preventDefault(); //form에서 submit event를 막음
   quadFirstXValue = parseFloat(quadFirstX.value);
   quadFirstYValue = parseFloat(quadFirstY.value);
@@ -101,8 +101,8 @@ function Submit(event) {
     otDifY = quadFirstYValue - quadThirdYValue;
     aDif3 = aDif1 - aDif2 * (bDif1 / bDif2);
     yDif3 = yDif1 - yDif2 * (bDif1 / bDif2);
-    Determination();
+    quadDetermination();
   }
 }
 
-quadForm.addEventListener("submit", Submit); //form에서 submit event가 발생했을때 Submit() 실행
+quadForm.addEventListener("submit", quadSubmit); //form에서 submit event가 발생했을때 Submit() 실행

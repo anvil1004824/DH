@@ -25,6 +25,7 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .first,
 .second,
@@ -46,7 +47,7 @@ input:focus {
 }
 .result {
   position: absolute;
-  bottom: 180px;
+  bottom: -30px;
 }
 footer {
   position: absolute;
