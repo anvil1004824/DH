@@ -8,8 +8,27 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>이차함수 그래프</h1>
-    <form class="graph">
+    <span class="graph-text">일차함수 그래프</span>
+    <span class="graph-text">이차함수 그래프</span>
+    <div class = "back hidden">
+        <i class="fas fa-chevron-left"></i>
+    </div>
+    <h1></h1>
+    <form class="graph prim hidden">
+      <h2>첫번째 점의 좌표</h2>
+      <div class="first">
+        <input type="text" required placeholder="X&#8321" />
+        <input type="text" required placeholder="Y&#8321" />
+      </div>
+      <h2>두번째 점의 좌표</h2>
+      <div class="second">
+        <input type="text" required placeholder="X&#8322" />
+        <input type="text" required placeholder="Y&#8322" />
+      </div>
+      <button class="check">식 확인하기</button>
+      <span class="result"></span>
+    </form>
+    <form class="graph quad hidden">
       <h2>첫번째 점의 좌표</h2>
       <div class="first">
         <input type="text" required placeholder="X&#8321" />
@@ -26,9 +45,12 @@
         <input type="text" required placeholder="Y&#8323" />
       </div>
       <button class="check">식 확인하기</button>
+      <span class="result"></span>
     </form>
-    <span class="result"></span>
     <footer>개발자:오동현</footer>
     <script src="index.js"></script>
+    <script src="prim.js"></script>
+    <script src="quad.js"></script>
+    <script src="https://kit.fontawesome.com/0fe7b435ac.js" crossorigin="anonymous"></script>
   </body>
 </html>
